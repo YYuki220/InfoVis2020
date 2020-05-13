@@ -26,6 +26,16 @@ class Vec3
     return (Math.min(this.x,this.y,this.z));
     }
 
+    max(v)
+    {
+    return (Math.max(this.x,this.y,this.z));
+    }
+
+    mid (v)
+    {
+    return (Math.median(this.x,this.y,this.z));
+    }
+
 
 
 }
