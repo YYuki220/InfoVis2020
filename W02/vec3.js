@@ -16,6 +16,14 @@ class Vec3
     return this;
     }
 
+    sum(v)
+    {
+    return this.x+this.y+this.z;
+    }
+
+
+
+
 }
 
 
