@@ -24,12 +24,12 @@ Vec3.prototype.min=funcion()
     return (Math.min(this.x,this.y,this.z));
 }
 
-Vec3.prototype.min=funcion()
+Vec3.prototype.max=funcion()
 {
     return (Math.max(this.x,this.y,this.z));
 }
 
-Vec3.prototype.min=funcion()
+Vec3.prototype.mid=funcion()
 {
     return (Math.median(this.x,this.y,this.z));
 }
