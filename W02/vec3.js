@@ -43,8 +43,8 @@ class Vec3
            if (a>c) return a;
             else  return c;
         if (c>a&&c>b)
-            if (a>b) return b;
-            else  return v;
+            if (a>b) return a;
+            else  return b;
     
     }
 
