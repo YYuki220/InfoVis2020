@@ -10,10 +10,18 @@ class Vec3
 
     add(v)
     {
-    this.x +=v.x;
-    this.y +=v.y;
-    this.z +=v.z;
-    return this;
+        var a = this.x+v.x;
+        var b = this.y+v.y;
+        var c = this.z+v.z;
+        return new Vec3(a,b,c); 
+    }
+
+    sub(v)
+    {
+        var a = this.x-v.x;
+        var b = this.y-v.y;
+        var c = this.z-v.z;
+        return new Vec3(a,b,c); 
     }
 
     sum(v)
@@ -48,6 +56,13 @@ class Vec3
     
     }
 
+    Cpro(v)
+    {
+        var a=this.y*v.z-this.z*v.y;
+        var b=this.z*v.x-this.x*v.z;
+        var c=this.x*v.y-this.y*v.x;
+        return new Vec3(a,b,c);
+    }
 
 
 }
