@@ -1,7 +1,7 @@
 class Vec3
 {
     //Constructor
-    Vec3 = function(x,y,z)
+    Vec3 (x,y,z)
     {   
     this.x=x;
     this.y=y;
@@ -21,6 +21,10 @@ class Vec3
     return this.x+this.y+this.z;
     }
 
+    min(v)
+    {
+    return (Math.min(this.x,this.y,this.z));
+    }
 
 
 
