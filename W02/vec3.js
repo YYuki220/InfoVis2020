@@ -1,7 +1,7 @@
 class Vec3
 {
     //Constructor
-    Vec3(x,y,z)
+    constructor(x,y,z)
     {   
     this.x=x;
     this.y=y;
