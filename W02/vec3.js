@@ -33,7 +33,19 @@ class Vec3
 
     mid (v)
     {
-    return (Math.median(this.x,this.y,this.z));
+        var a = this.x;
+        var b = this.y;
+        var c = this.z;
+        if (a>b&&a>c)
+            if (b>c) return b;
+            else  return c;
+        if (b>a&&b>c)
+           if (a>c) return a;
+            else  return c;
+        if (c>a&&c>b)
+            if (a>b) return b;
+            else  return v;
+    
     }
 
 
